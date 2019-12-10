@@ -1,4 +1,4 @@
-# Core JS 101
+# Core JS 1010
 
 ## Task
 The task is to implement functions on different Core JS topics. There are nine modules with different tasks. Each module consists of tasks for specified topic:
