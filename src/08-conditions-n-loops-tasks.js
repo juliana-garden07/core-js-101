@@ -27,8 +27,16 @@
  *  21 => 'Fizz'
  *
  */
-function getFizzBuzz(/* num */) {
-  throw new Error('Not implemented');
+function getFizzBuzz(num) {
+  if (!(num % 15)){
+      return 'FizzBuzz';
+  } else if (!(num % 3)){
+      return 'Fizz';
+  } else if (!(num % 5)){
+      return 'Buzz';
+  } else {
+       return num; 
+  }
 }
 
 
@@ -43,8 +51,12 @@ function getFizzBuzz(/* num */) {
  *   5  => 120
  *   10 => 3628800
  */
-function getFactorial(/* n */) {
-  throw new Error('Not implemented');
+function getFactorial(n) {
+  let num = 1;
+  for (let i = 1; i <= n; i++){
+   num *= i;
+  }
+ return num;
 }
 
 
@@ -60,8 +72,12 @@ function getFactorial(/* n */) {
  *   5,10  =>  45 ( = 5+6+7+8+9+10 )
  *   -1,1  =>  0  ( = -1 + 0 + 1 )
  */
-function getSumBetweenNumbers(/* n1, n2 */) {
-  throw new Error('Not implemented');
+function getSumBetweenNumbers(n1, n2) {
+  let sum = 0;
+  for(let i = n1; i <= n2; i++){
+   sum += i;
+  }
+  return sum;
 }
 
 
@@ -80,8 +96,9 @@ function getSumBetweenNumbers(/* n1, n2 */) {
  *   10,1,1   =>  false
  *   10,10,10 =>  true
  */
-function isTriangle(/* a, b, c */) {
-  throw new Error('Not implemented');
+function isTriangle(a, b, c) {
+  const arr = [a, b, c].sort((a, b) => a - b);
+  return (arr[0] + arr[1]) > arr[2];
 }
 
 
@@ -164,8 +181,12 @@ function isInsideCircle(/* circle, point */) {
  *   'abracadabra'  => 'c'
  *   'entente' => null
  */
-function findFirstSingleChar(/* str */) {
-  throw new Error('Not implemented');
+function findFirstSingleChar(str) {
+  str.split('').find(item => {
+    if (item) {
+      
+    }
+  });
 }
 
 
